@@ -26,8 +26,9 @@ The most basic form of comparison is equality. Let's briefly recap its syntax. T
 TRUE != FALSE
 "Rchitect" != "rchitect"
 Notice from the last expression that R is case sensitive: "R" is not equal to "r". Keep this in mind when solving the exercises in this chapter!
+  
   Instructions
-100 XP
+
 • In the editor on the right, write R code to see if TRUE equals FALSE.
 • Likewise, check if -6 * 14 is not equal to 17 - 101.
 • Next up: comparison of character strings. Ask R whether the strings "useR" and "user" are equal.
@@ -49,8 +50,9 @@ Apart from equality operators, Filip also introduced the less than and greater t
 "dog" < "Cats"
 TRUE <= FALSE
 Remember that for string comparison, R determines the greater than relationship based on alphabetical order. Also, keep in mind that TRUE is treated as 1 for arithmetic, and FALSE is treated as 0. Therefore, FALSE < TRUE is TRUE.
+
 Instructions
-100 XP
+
 Write R expressions to check whether:
   • -6 * 5 + 2 is greater than or equal to -10 + 1.
 • "raining" is less than or equal to "raining dogs".
@@ -69,7 +71,7 @@ You are already aware that R is very good with vectors. Without having to change
 Let's go back to the example that was started in the video. You want to figure out whether your activity on social media platforms have paid off and decide to look at your results for LinkedIn and Facebook. The sample code in the editor initializes the vectors linkedin and facebook. Each of the vectors contains the number of profile views your LinkedIn and Facebook profiles had over the last seven days.
 
 Instructions
-100 XP
+
 
 Using relational operators, find a logical answer, i.e. TRUE or FALSE, for the following questions:
   • On which days did the number of LinkedIn profile views exceed 15?
@@ -246,7 +248,7 @@ Before diving into some exercises on the if statement, have another look at its 
   }
 Remember your vectors with social profile views? Let's look at it from another angle. The medium variable gives information about the social website; the num_views variable denotes the actual number of views that particular medium had on the last day of your recordings. Both variables have been pre-defined for you.
 Instructions
-100 XP
+
 	• Examine the if statement that prints out "Showing LinkedIn information" if the medium variable equals "LinkedIn".
 	• Code an if statement that prints "You are popular!" to the console if the num_views variable exceeds 15.
 
@@ -271,8 +273,9 @@ You can only use an else statement in combination with an if statement. The else
   }
 It's important that the else keyword comes on the same line as the closing bracket of the if part!
 Both if statements that you coded in the previous exercises are already available to use. It's now up to you to extend them with the appropriate else statements!
+  
   Instructions
-100 XP
+
 Add an else statement to both control structures, such that
 • "Unknown medium" gets printed out to the console when the if-condition on medium does not hold.
 • R prints out "Try to be more visible!" when the if-condition on num_views is not met.
@@ -305,8 +308,9 @@ if (condition1) {
   expr4
 }
 Again, It's important that the else if keywords comes on the same line as the closing bracket of the previous part of the control construct!
+  
   Instructions
-100 XP
+
 Add code to both control structures such that:
   • R prints out "Showing Facebook information" if medium is equal to "Facebook". Remember that R is case sensitive!
   • "Your number of views is average" is printed if num_views is between 15 (inclusive) and 10 (exclusive). Feel free to change the variables medium and num_views to see how the control structure respond. In both cases, the existing code should be extended in the else if statement. No existing code should be modified.
@@ -364,8 +368,9 @@ Exercise
 Take control!
   In this exercise, you will combine everything that you've learned so far: relational operators, logical operators and control constructs. You'll need it all!
   We've pre-defined two values for you: li and fb, denoting the number of profile views your LinkedIn and Facebook profile had on the last day of recordings. Go through the instructions to create R code that generates a 'social media score', sms, based on the values of li and fb.
+
 Instructions
-100 XP
+
 Finish the control-flow construct with the following behavior:
 	• If both li and fb are 15 or higher, set sms equal to double the sum of li and fb.
 	• If both li and fb are strictly below 10, set sms equal to half the sum of li and fb.
@@ -445,10 +450,10 @@ Throw in more conditionals
 In the previous exercise, you simulated the interaction between a driver and a driver's assistant: When the speed was too high, "Slow down!" got printed out to the console, resulting in a decrease of your speed by 7 units.
 There are several ways in which you could make your driver's assistant more advanced. For example, the assistant could give you different messages based on your speed or provide you with a current speed at a given moment.
 A while loop similar to the one you've coded in the previous exercise is already available for you to use. It prints out your current speed, but there's no code that decreases the speed variable yet, which is pretty dangerous. Can you make the appropriate changes?
+  
+  
   Instructions
-100 XP
-Instructions
-100 XP
+
 • If the speed is greater than 48, have R print out "Slow down big time!", and decrease the speed by 11.
 • Otherwise, have R simply print out "Slow down!", and decrease the speed by 6.
 If the session keeps timing out and throwing an error, you are probably stuck in an infinite loop! Check the body of your while loop and make sure you are assigning new values to speed.
@@ -473,7 +478,7 @@ There are some very rare situations in which severe speeding is necessary: what 
   This seems like a great opportunity to include the break statement in the while loop you've been working on. Remember that the break statement is a control statement. When R encounters it, the while loop is abandoned completely.
 
 Instructions
-100 XP
+
 Adapt the while loop such that it is abandoned when the speed of the vehicle is greater than 80. This time, the speed variable has been initialized to 88; keep it that way.
 
 
@@ -499,7 +504,7 @@ while (speed > 30) {
 Build a while loop from scratch
 The previous exercises guided you through developing a pretty advanced while loop, containing a break statement and different messages and updates as determined by control flow constructs. If you manage to solve this comprehensive exercise using a while loop, you're totally ready for the next topic: the for loop.
 Instructions
-100 XP
+
 Finish the while loop so that it:
   • prints out the triple of i, so 3 * i, at each run.
 • is abandoned with a break if the triple of i is divisible by 8, but still prints out this triple before breaking.
@@ -569,7 +574,7 @@ for (i in 1:length(primes)) {
 Remember our linkedin vector? It's a vector that contains the number of views your LinkedIn profile had in the last seven days. The linkedin vector has been pre-defined so that you can fully focus on the instructions!
 
 Instructions
-100 XP
+
 Write a for loop that iterates over all the elements of linkedin and prints out every element separately. Do this in two ways: using the loop version 1 and the loop version 2 in the example code above.
 
 
@@ -599,7 +604,7 @@ Notice that you need double square brackets - [[ ]] - to select the list element
 Suppose you have a list of all sorts of information on New York City: its population size, the names of the boroughs, and whether it is the capital of the United States. We've already defined a list nyc containing this information (source: Wikipedia).
 
 Instructions
-100 XP
+
 As in the previous exercise, loop over the nyc list in two different ways to print its elements:
   • Loop directly over the nyc list (loop version 1).
 • Define a looping index and do subsetting using double brackets (loop version 2).
@@ -627,7 +632,7 @@ To solve this exercise, you'll need a for loop inside a for loop, often called a
   }
 
 Instructions
-100 XP
+
 
 Finish the nested for loops to go over the elements in ttt:
   • The outer loop should loop over the rows, with loop index i (use 1:nrow(ttt)).
@@ -646,7 +651,7 @@ Mix it up with control flow
 Let's return to the LinkedIn profile views data, stored in a vector linkedin. In the first exercise on for loops you already did a simple printout of each element in this vector. A little more in-depth interpretation of this data wouldn't hurt, right? Time to throw in some conditionals! As with the while loop, you can use the if and else statements inside the for loop.
 
 Instructions
-100 XP
+
 Add code to the for loop that loops over the elements of the linkedin vector:
   • If the vector element's value exceeds 10, print out "You're popular!".
 	• If the vector element's value does not exceed 10, print out "Be more visible!"
@@ -673,7 +678,7 @@ In this exercise, you will use the break and next statements:
 
 Instructions
 
-100 XP
+
 Extend the for loop with two new, separate if tests as follows:
 	• If the vector element's value exceeds 16, print out "This is ridiculous, I'm outta here!" and have R abandon the for loop (break).
 • If the value is lower than 5, print out "This is too embarrassing!" and fast-forward to the next iteration (next).
@@ -709,7 +714,7 @@ We already went ahead and defined a variable rquote. This variable has been spli
 Can you write code that counts the number of r's that come before the first u in rquote?
 
 Instructions
-100 XP
+
 	• Initialize the variable rcount, as 0.
 	• Finish the for loop:
 	• if char equals "r", increase the value of rcount by 1.
@@ -801,7 +806,7 @@ Remember that R can match arguments both by position and by name. Can you still 
 Once more, you'll be working with the view counts of your social network profiles for the past 7 days. These are stored in the linkedin and facebook vectors and have already been created for you.
 
 Instructions
-100 XP
+
 	• Calculate the average number of views for both linkedin and facebook and assign the result to avg_li and avg_fb, respectively. Experiment with different types of argument matching!
 	• Print out both avg_li and avg_fb.
 
@@ -829,7 +834,7 @@ The ... is called the ellipsis. It is a way for R to pass arguments along withou
 For the remainder of this exercise, just work with the second usage of the mean function. Notice that both trim and na.rm have default values. This makes them optional arguments.
 
 Instructions
-100 XP
+
 	• Calculate the mean of the element-wise sum of linkedin and facebook and store the result in a variable avg_sum.
 	• Calculate the mean once more, but this time set the trim argument equal to 0.2 and assign the result to avg_sum_trimmed.
 	• Print out both avg_sum and avg_sum_trimmed; can you spot the difference?
@@ -854,7 +859,7 @@ mean(x, trim = 0, na.rm = FALSE, ...)
 Let's see what happens if your vectors linkedin and facebook contain missing values (NA).
 
 Instructions
-100 XP
+
 	• Calculate the average number of LinkedIn profile views, without specifying any optional arguments. Simply print the result to the console.
 	• Calculate the average number of LinkedIn profile views, but this time tell R to strip missing values from the input vector.
 
@@ -874,7 +879,7 @@ print(paste("Your speed is", speed))
 Notice that both the print() and paste() functions use the ellipsis - ... - as an argument. Can you figure out how they're used?
 
 Instructions
-100 XP
+
 Use abs() on linkedin - facebook to get the absolute differences between the daily LinkedIn and Facebook profile views. Place the call to abs() inside mean() to calculate the Mean Absolute Deviation. In the mean() call, make sure to specify na.rm to treat missing values correctly!
 
 # The linkedin and facebook vectors have already been created for you
@@ -897,7 +902,7 @@ Which of the following statements about the read.table() function are true?
 	4. read.table("myfile.txt", sep = "-", header = TRUE) will throw an error.
 	
 Instructions
-50 XP
+
 
 Possible Answers
 • (1) and (3)
@@ -954,7 +959,7 @@ my_fun <- function(arg1, arg2) {
 Notice that this recipe uses the assignment operator (<-) just as if you were assigning a vector to a variable for example. This is not a coincidence. Creating a function in R basically is the assignment of a function object to a variable! In the recipe above, you're creating a new R variable my_fun, that becomes available in the workspace as soon as you execute the definition. From then on, you can use the my_fun as a function.
 
 Instructions
-100 XP
+
 	• Create a function pow_two(): it takes one argument and returns that number squared (that number times itself).
 	• Call this newly defined function with 12 as input.
 	• Next, create a function sum_abs(), that takes two arguments and returns the sum of the absolute values of both arguments.
@@ -984,7 +989,7 @@ throw_die()
 Up to you to code a function that doesn't take any arguments!
 
 Instructions
-100 XP
+
 	• Define a function, hello(). It prints out "Hi there!" and returns TRUE. It has no arguments.
 	• Call the function hello(), without specifying arguments of course.
 
@@ -1009,7 +1014,7 @@ my_fun <- function(arg1, arg2 = val2) {
 The editor on the right already includes an extended version of the pow_two() function from before. Can you finish it?
 
 Instructions
-100 XP
+
 	• Add an optional argument, named print_info, that is TRUE by default.
 	• Wrap an if construct around the print() function: this function should only be executed if print_info is TRUE.
 	• Feel free to experiment with the pow_two() function you've just coded.
@@ -1026,6 +1031,1122 @@ pow_two <- function(x, print_info = TRUE) {
 pow_two(5)
 pow_two(5, FALSE)
 pow_two(5, TRUE)
+
+
+July 02, 2022
+
+Function scoping
+
+An issue that Filip did not discuss in the video is function scoping. It implies that variables that are defined inside a function are not accessible outside that function. Try running the following code and see if you understand the results:
+
+pow_two <- function(x) {
+  y <- x ^ 2
+  return(y)
+}
+pow_two(4)
+y
+x
+y was defined inside the pow_two() function and therefore it is not accessible outside of that function. This is also true for the function's arguments of course - x in this case.
+
+Which statement is correct about the following chunk of code? The function two_dice() is already available in the workspace.
+
+two_dice <- function() {
+  possibilities <- 1:6
+  dice1 <- sample(possibilities, size = 1)
+  dice2 <- sample(possibilities, size = 1)
+  dice1 + dice2
+}
+Instructions
+
+Possible Answers
+
+Executing two_dice() causes an error.
+
+Executing res <- two_dice() makes the contents of dice1 and dice2 available outside the function.
+
+Whatever the way of calling the two_dice() function, R won't have access to dice1 and dice2 outside the function.(Possible right answer)
+
+Exercise
+
+R passes arguments by value
+The title gives it away already: R passes arguments by value. What does this mean? Simply put, it means that an R function cannot change the variable that you input to that function. Let's look at a simple example (try it in the console):
+
+triple <- function(x) {
+  x <- 3*x
+  x
+}
+a <- 5
+triple(a)
+a
+Inside the triple() function, the argument x gets overwritten with its value times three. Afterwards this new x is returned. If you call this function with a variable a set equal to 5, you obtain 15. But did the value of a change? If R were to pass a to triple() by reference, the override of the x inside the function would ripple through to the variable a, outside the function. However, R passes by value, so the R objects you pass to a function can never change unless you do an explicit assignment. a remains equal to 5, even after calling triple(a).
+
+Can you tell which one of the following statements is false about the following piece of code?
+
+increment <- function(x, inc = 1) {
+  x <- x + inc
+  x
+}
+count <- 5
+a <- increment(count, 2)
+b <- increment(count)
+count <- increment(count, 2)
+
+Instructions
+
+Possible Answers
+
+a and b equal 7 and 6 respectively after executing this code block.
+
+After the first call of increment(), where a is defined, a equals 7 and count equals 5.
+
+In the end, count will equal 10.(this is the possible answer)
+
+In the last expression, the value of count was actually changed because of the explicit assignment.
+
+
+Exercise
+
+R you functional?
+Now that you've acquired some skills in defining functions with different types of arguments and return values, you should try to create more advanced functions. As you've noticed in the previous exercises, it's perfectly possible to add control-flow constructs, loops and even other functions to your function body.
+
+Remember our social media example? The vectors linkedin and facebook are already defined in the workspace so you can get your hands dirty straight away. As a first step, you will be writing a function that can interpret a single value of this vector. In the next exercise, you will write another function that can handle an entire vector at once.
+
+Instructions
+
+Finish the function definition for interpret(), that interprets the number of profile views on a single day:
+The function takes one argument, num_views.
+If num_views is greater than 15, the function prints out "You're popular!" to the console and returns num_views.
+Else, the function prints out "Try to be more visible!" and returns 0.
+Finally, call the interpret() function twice: on the first value of the linkedin vector and on the second element of the facebook vector.
+
+# The linkedin and facebook vectors have already been created for you
+
+# Define the interpret function
+interpret <- function(num_views) {
+  if (num_views > 15) {
+    print("You're popular!")
+    return(num_views)
+  } else {
+    print("Try to be more visible!")
+    return(0)
+  }
+}
+
+# Call the interpret function twice
+interpret(linkedin[1])
+interpret(facebook[2])
+
+Exercise
+
+R you functional? (2)
+A possible implementation of the interpret() function has been provided for you. In this exercise you'll be writing another function that will use the interpret() function to interpret all the data from your daily profile views inside a vector. Furthermore, your function will return the sum of views on popular days, if asked for. A for loop is ideal for iterating over all the vector elements. The ability to return the sum of views on popular days is something you can code through a function argument with a default value.
+
+Instructions
+
+Finish the template for the interpret_all() function:
+
+Make return_sum an optional argument, that is TRUE by default.
+Inside the for loop, iterate over all views: on every iteration, add the result of interpret(v) to count. Remember that interpret(v) returns v for popular days, and 0 otherwise. At the same time, interpret(v) will also do some printouts.
+Finish the if construct:
+If return_sum is TRUE, return count.
+Else, return NULL.
+Call this newly defined function on both linkedin and facebook.
+
+Code: 
+
+# The linkedin and facebook vectors have already been created for you
+linkedin <- c(16, 9, 13, 5, 2, 17, 14)
+facebook <- c(17, 7, 5, 16, 8, 13, 14)
+
+# The interpret() can be used inside interpret_all()
+interpret <- function(num_views) {
+  if (num_views > 15) {
+    print("You're popular!")
+    return(num_views)
+  } else {
+    print("Try to be more visible!")
+    return(0)
+  }
+}
+
+# Define the interpret_all() function
+# views: vector with data to interpret
+# return_sum: return total number of views on popular days?
+interpret_all <- function(views, return_sum = TRUE) {
+  count <- 0
+
+  for (v in views) {
+    count <- count + interpret(v)
+  }
+
+  if (return_sum) {
+    return(count)
+  } else {
+    return(NULL)
+  }
+}
+
+# Call the interpret_all() function on both linkedin and facebook
+interpret_all(linkedin)
+interpret_all(facebook)
+
+1. R Packages
+Because you've learned so much in this chapter by now, let us do a brief recap. First, you've learned about the different ways to use R's built-in functions. Next, you took full control by actually creating your own R functions. You can use these newly defined functions just as we use R's built-in functions like mean, list and sample, just to name a few.
+
+2. R Packages
+But, wait? How come these functions are 'built in'? These functions are not in my workspace, so how on earth does R know where to find these functions mean, list and sample? Well, all of these built-in functions are part of R packages that are loaded in your R session. R packages are bundles of code, data, documentation, and tests that are easy to share with others. For example, the mean, list and sample functions are all part of the base package, which contains the basic functionality to use R. Another example package, specifically for data visualization, is the ggvis package. It contains functions such as layer_points, scale_nominal and add_axis.
+
+3. Install packages
+Before you can use a package, you will first have to install it. The base package is automatically installed when you install R. The ggvis package on the other hand won't come with the bundled R installation. But fear not! You can easily install it from inside R, using the install (dot) packages function, which, by the way is a function of the utils package. This function goes to CRAN. CRAN is short for the Comprehensive R Archive Network, a repository where thousands of packages are available. The function downloads the package file and installs the package on your system. All of this is done with this single command in R, pretty cool right? We've now installed the ggvis package, but we can't use it yet.
+
+4. Load packages
+To do that, we'll have to actually load the package into our current R session. When R loads a package, it actually attaches it to the search list. This is a list of packages and environments that R looks through to find the variable or function you want to use. To have a look at this list, you can use the search() function. Whenever you execute code that depends on any other variable or function, R goes through all these packages one after the other to find it. Apart from all the packages that are loaded into our R session, we also see ".GlobalEnv"; this is our own workspace, where the user-defined R objects live. You can also see that the search() path already contains a bunch of packages. When R is started, it loads 7 packages on default, among which is the base package. Others are the utils, datasets and methods package. That's why, when you start R, you can use the mean function, or the install (dot) packages function without having to explicitly load the package. The ggvis package that we've installed earlier, however, won't be loaded automatically. If we try to access the ggvis function, for example, R will return an error, telling us that the function ggvis could not be found. That's because ggvis is not yet in the search list.
+
+5. Load packages: library()
+To access ggvis' functionality, we'll have to load the package using the library command. This command takes the name of the package and adds the package to the search list, right after the global environment, making all the functions, data and pre-compiled code it contains available and ready to be used. We can check this by running search() once more. Indeed, ggvis is now part of the search list. If we now execute the same command, a pretty awesome graph shows up! Now R could find the function in the list of attached packages and use it to create this nice plot.
+
+6. Load packages: require()
+Before you proceed to the exercises, I want to tell you about the require function. Just like the library function, require loads packages into your R session. The only difference appears when you're trying to load a package that is not yet installed. Let's say you want to load the data (dot) table package, a package to perform data manipulation, but that this package is not yet installed. If you call library(data (dot) table). R throws an error in this case. However, when you execute require(data (dot) table), you get a warning.
+
+7. Load packages: require()
+Also, the result of this require function will be FALSE if attaching the package failed. This is a good alternative when you want to avoid errors, for example when you're attaching packages dynamically inside functions.
+
+8. Wrap-up
+So to wrap up: the install (dot) packages() function installs packages for you, while library() and require() load them for you. And when you load packages, you're attaching them to a search list, making them available in your current R session. Before you start writing your own functions, first do a quick search for packages that do the same thing. You can simply install and load the package, have a look at the documentation and avoid having to rewrite a bunch of code that's already been written. I'm not saying that you should never write your own functions, but for common problems such as data manipulation or visualization, there are some pretty neat packages out there that will get you up and running in no time.
+
+9. Let's practice!
+  
+  # Load the ggplot2 package
+  library(ggplot2)
+
+# Retry the qplot() function
+qplot(mtcars$wt, mtcars$hp)
+
+# Check out the currently attached packages again
+search()
+
+Exercise
+
+Different ways to load a package
+The library() and require() functions are not very picky when it comes down to argument types: both library(rjson) and library("rjson") work perfectly fine for loading a package.
+Have a look at some more code chunks that (attempt to) load one or more packages:
+  # Chunk 1
+  library(data.table)
+require(rjson)
+# Chunk 2
+library("data.table")
+require(rjson)
+# Chunk 3
+library(data.table)
+require(rjson, character.only = TRUE)
+# Chunk 4
+library(c("data.table", "rjson"))
+
+Select the option that lists all of the chunks that do not generate an error. The console is yours to experiment in.
+Instructions
+
+
+Possible Answers
+• Only (1)
+• (1) and (2)
+• (1), (2) and (3)
+• All of them are valid
+
+Chapter 4. lapply
+
+
+Got It!
+  1. lapply
+When you're using R, you will often encounter vectors and lists containing all sorts of information. You've seen before that the for loop is there to help us iterate over all kinds of data structures. But I'm glad to tell you there's an even easier way!
+  
+  2. NYC: for
+Let's have a look at some information related to New York City. It is stored in a list. Suppose we want to find out the class of each element of this list. As you already know, you could use a for loop that iterates over the different elements of nyc, and call the class() function. As expected, the first element is numeric, the second one is a character string, and the third is a logical. This however is quite a bit of code just to find out the class of elements of a list, isn't it?
+  
+  3. NYC: lapply()
+lapply is here to rescue us from writing too much code for simple tasks such as these. I don't want to overwhelm you with a complex definition of lapply, so let us simply rewrite our previous statement. Let's replace the for loop with an lapply and see what happens. Under the hood, lapply iterated over the inputted list, nyc, and on each element of the list, applied the function class(). The output of lapply includes the results of calling the class function over each of the list elements. The first element in the output now contains the class of the first element in nyc, namely "numeric".
+
+4. NYC: lapply()
+The second element in the output contains the class of the second element in nyc, "character", and the third element contains logical, the class of the third input element. Also notice that the names of the list, pop, boroughs and capital are maintained here, that's pretty useful!
+
+5. Cities: for
+Let's have a look at another example, now with a vector of city names. Suppose we want to build a vector of the same length as cities, containing the number of characters of each city name. We can do that by using the following for loop. First, we create an empty vector, called num_chars. Inside the for loop, using a looping index, we gradually fill this vector up using the nchar function. We get the wanted result, but it's a lot of code to do a simple thing, in my opinion.
+
+6. Cities: lapply()
+Fortunately, refactoring this code to use lapply is easy. As the input, we use the cities vector as well as the function we want to apply on each element in this vector: We get a list containing the number of characters of the corresponding cities in the input vector. Notice here that the output is a list, although the input was a vector. This is something important about the lapply function: it always returns a list, irrespective of the input data structure.
+
+7. Cities: lapply()
+If you want to convert this list to a vector, you can simply wrap this lapply function inside the unlist() function which turns a list into a vector. In a single one-liner, we have achieved the exact same thing as the bulky for loop. Moreover, by using lapply our code looks much more intuitive and readable.
+
+8. Oil
+In the previous examples we applied the functions class() and nchar() on every element of the input vector or list, but lapply can also be used with functions that you've written yourself. Let's try to write some code to illustrate this. Assume we have a list of oil prices per gallon. We will write a function that triples every element of oil_prices. We can write the function triple that simply calculates the triple of its input: Now, all we need to do is applying this triple function on each element of oil_prices using lapply. Works like a charm! Again, you can unlist the result, if you want your output as a vector rather than as a list:
+
+9. Oil
+Now let's try to make this triple function a bit more generic, and instead call it multiply, and have it use an additional argument, factor: We can now choose with which factor we want to multiply our input. Calling triple is now the same as calling multiply with the factor argument equal to three. But wait, what if we want to use multiply inside the lapply function? How can we specify this additional argument? Well, lapply allows you to add additional arguments to the function: just include them right after the function you want to apply to your list or vector: Now, on every element of oil_prices, the function multiply is called, with x equal to each element of the input list, and a factor of three every time. See what happens with the oil prices when we change the factor of the multiply function: they all get multiplied by four now.
+
+10. Let's practice!
+In the next set of exercises, you'll get hands on experience with the lapply function. You'll learn how to use lapply on built-in functions, your own functions as well as anonymous functions. Have fun!
+
+Use lapply with a built-in R function
+Before you go about solving the exercises below, have a look at the documentation of the lapply() function. The Usage section shows the following expression:
+lapply(X, FUN, ...)
+To put it generally, lapply takes a vector or list X, and applies the function FUN to each of its members. If FUN requires additional arguments, you pass them after you've specified X and FUN (...). The output of lapply() is a list, the same length as X, where each element is the result of applying FUN on the corresponding element of X.
+Now that you are truly brushing up on your data science skills, let's revisit some of the most relevant figures in data science history. We've compiled a vector of famous mathematicians/statisticians and the year they were born. Up to you to extract some information!
+  
+  Instructions
+
+• Have a look at the strsplit() calls, that splits the strings in pioneers on the : sign. The result, split_math is a list of 4 character vectors: the first vector element represents the name, the second element the birth year.
+• Use lapply() to convert the character vectors in split_math to lowercase letters: apply tolower() on each of the elements in split_math. Assign the result, which is a list, to a new variable split_low.
+Finally, inspect the contents of split_low with str().
+
+code
+
+# The vector pioneers has already been created for you
+pioneers <- c("GAUSS:1777", "BAYES:1702", "PASCAL:1623", "PEARSON:1857")
+
+# Split names from birth year
+split_math <- strsplit(pioneers, split = ":")
+
+# Convert to lowercase strings: split_low
+split_low <- lapply(split_math, tolower)
+
+# Take a look at the structure of split_low
+str(split_low)
+
+code
+
+# Code from previous exercise:
+pioneers <- c("GAUSS:1777", "BAYES:1702", "PASCAL:1623", "PEARSON:1857")
+split <- strsplit(pioneers, split = ":")
+split_low <- lapply(split, tolower)
+
+# Write function select_first()
+select_first <- function(x) {
+  x[1]
+}
+# Apply select_first() over split_low: names
+names <- lapply(split_low, select_first)
+
+# Write function select_second()
+select_second <- function(x) {
+  x[2]
+}
+# Apply select_second() over split_low: years
+years <- lapply(split_low, select_second)
+
+Exercise
+lapply and anonymous functions
+Writing your own functions and then using them inside lapply() is quite an accomplishment! But defining functions to use them only once is kind of overkill, isn't it? That's why you can use so-called anonymous functions in R.
+
+Previously, you learned that functions in R are objects in their own right. This means that they aren't automatically bound to a name. When you create a function, you can use the assignment operator to give the function a name. It's perfectly possible, however, to not give the function a name. This is called an anonymous function:
+  
+  # Named function
+  triple <- function(x) { 3 * x }
+
+# Anonymous function with same implementation
+function(x) { 3 * x }
+
+# Use anonymous function inside lapply()
+lapply(list(1,2,3), function(x) { 3 * x })
+split_low is defined for you.
+
+Instructions
+
+Transform the first call of lapply() such that it uses an anonymous function that does the same thing.
+In a similar fashion, convert the second call of lapply to use an anonymous version of the select_second() function.
+Remove both the definitions of select_first() and select_second(), as they are no longer useful.
+
+# split_low has been created for you
+split_low
+# Transform: use anonymous function inside lapply
+function(x) {x[1]}
+names <- lapply (split_low, function (x) {x[1]})
+# Transform: use anonymous function inside lapply
+function(x) {x[2]}
+years <- lapply (split_low, function(x) {x[2]})
+
+
+Exercise
+
+Use lapply with additional arguments
+In the video, the triple() function was transformed to the multiply() function to allow for a more generic approach. lapply() provides a way to handle functions that require more than one argument, such as the multiply() function:
+  multiply <- function(x, factor) {
+    x * factor
+  }
+lapply(list(1,2,3), multiply, factor = 3)
+On the right we've included a generic version of the select functions that you've coded earlier: select_el(). It takes a vector as its first argument, and an index as its second argument. It returns the vector's element at the specified index.
+
+
+Instructions
+
+Use lapply() twice to call select_el() over all elements in split_low: once with the index equal to 1 and a second time with the index equal to 2. Assign the result to names and years, respectively.
+
+
+# Definition of split_low
+pioneers <- c("GAUSS:1777", "BAYES:1702", "PASCAL:1623", "PEARSON:1857")
+split <- strsplit(pioneers, split = ":")
+split_low <- lapply(split, tolower)
+# Generic select function
+select_el <- function(x, index) {
+  x[index]
+}
+# Use lapply() twice on split_low: names and years
+names <- lapply (split_low, select_el, index= 1)
+years <- lapply (split_low, select_el, index= 2)
+
+Exercise
+Apply functions that return NULL
+In all of the previous exercises, it was assumed that the functions that were applied over vectors and lists actually returned a meaningful result. For example, the tolower() function simply returns the strings with the characters in lowercase. This won't always be the case. Suppose you want to display the structure of every element of a list. You could use the str() function for this, which returns NULL:
+  lapply(list(1, "a", TRUE), str)
+This call actually returns a list, the same size as the input list, containing all NULL values. On the other hand calling
+str(TRUE)
+on its own prints only the structure of the logical to the console, not NULL. That's because str() uses invisible() behind the scenes, which returns an invisible copy of the return value, NULL in this case. This prevents it from being printed when the result of str() is not assigned.
+What will the following code chunk return (split_low is already available in the workspace)? Try to reason about the result before simply executing it in the console!
+lapply(split_low, function(x) {
+  if (nchar(x[1]) > 5) {
+    return(NULL)
+  } else {
+    return(x[2])
+  }
+})
+Instructions
+
+Possible Answers
+• list(NULL, NULL, "1623", "1857")
+• list("gauss", "bayes", NULL, NULL)
+• list("1777", "1702", NULL, NULL) (correct answer)
+list("1777", "1702")
+
+
+Got It!
+1. sapply
+2. lapply()
+Before, I talked about how lapply can be used to apply a function over each and every element of a list or a vector. The key thing of the lapply function is that its output is always a list. That's because an R function can return any R object. Also, the class of the R object it returns can differ depending on the input. When lapply is used to apply such a function over all elements in an input list or vector, it needs a list to store these results, because a list is able to contain heterogeneous content. However, you can think of many cases where the function always returns the same type of object over and over.
+
+3. Cities: lapply()
+Remember the cities example from the previous video? We had a vector, cities. We used lapply with the nchar function. As a result, we obtained a list with the length of each of the cities names. But wait! These values could very well fit into a simple vector as well! They all have the same type!
+  
+  4. Cities: lapply()
+We already tried to solve this by using the unlist function to convert a list to a vector as follows: But behold! there's an easier way to tackle the case in which all the results have the same type
+
+5. Cities: sapply()
+by using the sapply function. It's short for 'simplify apply'. Awesome, right? The result is a named vector, which contains the same information as the vector we obtained earlier using unlist and lapply together. Under the hood, something slightly more complex is going on. sapply calls lapply to apply the nchar function over each element of the cities vector, and then uses the simplify2array function to convert that list lapply generated to an array. In our case, sapply managed to convert the result to a one dimensional array, which is a vector. It's pretty awesome to see how R takes care of all this for us! On top of all that, sapply even found a sensible way of naming this vector.
+
+6. Cities: sapply()
+You can choose not to name the output of sapply, by setting its USE (dot) NAMES argument to FALSE. Voilá, city names are gone! Remember that USE (dot) NAMES is TRUE by default.
+
+7. Cities: sapply()
+Now, what would happen if the function you want to apply over the input, each time returns a vector containing two values instead of one? Let's find out with another example. The function first_and_last, that I've written for you, splits up a string to its letters, and then returns the 'minimum and maximum' letter according to alphabetical order: If we call this function on the character string "New York", the function returns a vector containing "e" and "Y". These are precisely the first and last letters of the word "New York" when ordered alphabetically.
+
+8. Cities: sapply()
+We can now use this function to apply it over every city name in cities. Instead of a vector, we now obtain a matrix, with 2 rows and 6 columns. Can you see how the output is generated? Notice here, that once again sapply assigns meaningful strings to the names of the columns and rows automatically.
+
+9. Unable to simplify?
+Both of my previous examples show the power of the sapply function to simplify the output of lapply, but what if this simplification is not possible? There are cases in which the function you want to apply does not always return a vector of the same length at all times. For these cases, simplification to a vector or a matrix just doesn't make sense. How does sapply respond to that? I've defined a function, unique_letters, that returns a vector of all the letters that are used inside a character string. If we try this function on the character string "London", we get a vector containing the unique letters in "London": "L", "o", "n" and "d".
+
+10. Unable to simplify?
+Let us first see how lapply behaves when we use unique_letters on the cities variable: As expected, we get a list containing vectors of single letters. We also see that the vectors have varying lengths, so trying to simplify this list could lead to pretty strange results. Let's see how sapply handles this. The result is the same as the lapply function, we get a list of vectors because R couldn't think of a meaningful way of simplifying the list of vectors. It was only able to give some meaningful names to the results. The fact that sapply simplifies when possible is quite handy, but it can also lead to problems. When writing a program, you might expect that the result of a sapply() function will be a vector where in fact it's still a list because simplification didn't work out!
+
+11. Let's practice!
+  To solve this, one can also use the R function vapply, which we'll discuss in our next video. Before you learn about it, head over to the interactive exercises to see how your apply skills are progressing!
+
+Code
+
+# temp has already been defined in the workspace
+
+# Use lapply() to find each day's minimum temperature
+lapply(temp, min)
+
+# Use sapply() to find each day's minimum temperature
+sapply(temp, min)
+
+# Use lapply() to find each day's maximum temperature
+lapply (temp, max)
+
+# Use sapply() to find each day's maximum temperature
+sapply (temp, max)
+
+
+Example:
+  
+  # temp is already defined in the workspace
+  
+  # Finish function definition of extremes_avg
+  extremes_avg <- function(temp) {
+    ( min(temp) + max(temp) ) / 2
+  }
+
+# Apply extremes_avg() over temp using sapply()
+sapply (temp, extremes_avg)
+
+# Apply extremes_avg() over temp using lapply()
+lapply (temp, extremes_avg)
+
+Exercise
+
+sapply with function returning vector
+In the previous exercises, you've seen how sapply() simplifies the list that lapply() would return by turning it into a vector. But what if the function you're applying over a list or a vector returns a vector of length greater than 1? If you don't remember from the video, don't waste more time in the valley of ignorance and head over to the instructions!
+  
+  Instructions
+
+Finish the definition of the extremes() function. It takes a vector of numerical values and returns a vector containing the minimum and maximum values of a given vector, with the names "min" and "max", respectively.
+Apply this function over the vector temp using sapply().
+Finally, apply this function over the vector temp using lapply() as well.
+
+
+Code
+
+# temp is already available in the workspace
+
+# Create a function that returns min and max of a vector: extremes
+extremes <- function(temp) {
+  c(min = min(temp), max = max(temp))
+}
+
+# Apply extremes() over temp with sapply()
+sapply (temp, extremes)
+
+# Apply extremes() over temp with lapply()
+lapply (temp, extremes)
+
+Exercise
+sapply can't simplify, now what?
+It seems like we've hit the jackpot with sapply(). On all of the examples so far, sapply() was able to nicely simplify the rather bulky output of lapply(). But, as with life, there are things you can't simplify. How does sapply() react?
+We already created a function, below_zero(), that takes a vector of numerical values and returns a vector that only contains the values that are strictly below zero.
+
+Instructions
+
+	• Apply below_zero() over temp using sapply() and store the result in freezing_s.
+	• Apply below_zero() over temp using lapply(). Save the resulting list in a variable freezing_l.
+	• Compare freezing_s to freezing_l using the identical() function.
+
+Code
+
+# temp is already prepared for you in the workspace
+# Definition of below_zero()
+below_zero <- function(temp) {
+  return(temp[temp < 0])
+}
+# Apply below_zero over temp using sapply(): freezing_s
+freezing_s <- sapply(temp, below_zero)
+# Apply below_zero over temp using lapply(): freezing_l
+freezing_l <- lapply(temp, below_zero)
+# Are freezing_s and freezing_l identical?
+identical(freezing_s,freezing_l)
+
+Exercise
+sapply with functions that return NULL
+You already have some apply tricks under your sleeve, but you're surely hungry for some more, aren't you? In this exercise, you'll see how sapply() reacts when it is used to apply a function that returns NULL over a vector or a list.
+A function print_info(), that takes a vector and prints the average of this vector, has already been created for you. It uses the cat() function.
+
+Instructions
+
+• Apply print_info() over the contents of temp with sapply().
+• Repeat this process with lapply(). Do you notice the difference?
+  
+  code
+
+# temp is already available in the workspace
+
+# Definition of print_info()
+print_info <- function(temp) {
+  cat("The average temperature is", mean(temp), "\n")
+}
+
+# Apply print_info() over temp using sapply()
+sapply (temp, print_info)
+# Apply print_info() over temp using lapply()
+lapply (temp, print_info)
+
+Exercise
+
+Reverse engineering sapply
+sapply(list(runif (10), runif (10)), 
+       function(x) c(min = min(x), mean = mean(x), max = max(x)))
+Without going straight to the console to run the code, try to reason through which of the following statements are correct and why.
+
+(1) sapply() can't simplify the result that lapply() would return, and thus returns a list of vectors.
+(2) This code generates a matrix with 3 rows and 2 columns.
+(3) The function that is used inside sapply() is anonymous.
+(4) The resulting data structure does not contain any names.
+
+Select the option that lists all correct statements.
+
+Instructions
+
+Possible Answers
+
+(1) and (3)
+
+(2) and (3) (Correct answers)
+
+(1) and (4)
+
+(2), (3) and (4)
+
+Vapply
+
+
+Got It!
+1. vapply
+That was some pretty advanced stuff you did there!
+
+2. Recap
+Before you head over to the final topic of this chapter, let's do a quick recap. First, you learned about lapply. This function allows you to avoid the for loop altogether and apply a function on every element of a list or a vector. The output list has the same length as the input list. The lapply function always returns a list, but there are many cases in which this list can be simplified to an array. That's why R provides the sapply function, short for simplify apply. Whenever possible, sapply tries to convert the list that lapply generates to an array. If this is not possible, however, sapply simply returns the same list that lapply generates. This can be quite dangerous, because the behavior of sapply's output depends on the specifics of the data we're using. This short overview leads us seamlessly to the vapply function. vapply is quite similar to sapply. Under the hood, it uses lapply and then tries to simplify the result. However, when using vapply, you have to explicitly say what the type of the return value will be. In sapply, this is not required nor possible.
+
+3. sapply() & vapply()
+Let's take a look at a case where sapply and vapply act quite similarly, and then check an example where the power of vapply is more clear. We'll be using the cities example from before. We had a vector of city names, cities, over which we apply different functions. For example, calling the nchar function with sapply gives us a vector with the length of each character string. How can we write this using vapply? Well, when we check the documentation of the vapply function, we can see it can be used as follows. X, FUN and USE (dot) NAMES are arguments that you already know from the sapply() function, but the FUN (dot) VALUE argument is new here. This argument should be a general template for the return value of FUN, the function that you want to apply over the input X. In our example, we want to apply the nchar function over cities. nchar is a function that returns a single number, which is a numeric vector of length 1. We can template this output using the numeric() function, by setting FUN dot VALUE to numeric(1), which tells the vapply function that nchar() should return a single numerical value. The result is exactly the same as the sapply function from before. However, this 'pre-specification' of FUN's return value makes vapply a safer alternative to sapply.
+
+4. vapply()
+To understand this, let's re-use another example from our discussion of sapply, where we extracted the first and last letters of the cities' names. Here, sapply works like a charm again.
+
+5. vapply()
+To write this using vapply, we'll need to set FUN (dot) NAMES again. This time, the FUN we want to apply, first_and_last returns a character vector of length two, which can be expressed as character(2). Works great!
+
+6. vapply() errors
+But let's see what happens if we told vapply() that we expect first_and_last to return a character vector of length 1. This generates an error. the output of the first_and_last function is not expected, so R complains.
+
+7. vapply() errors
+A similar error pops up if we tell vapply() that the output of first_and_last will be a numerical vector of length 2.
+
+8. unique_letters()
+This little bit of extra work in defining the FUN dot VALUES arguments has the benefit that you really have to think about what your function will return without blindly assuming that the sapply function will handle every case for you! Let's have a look at a final example. Remember the function we wrote to get the unique letters in a string? Here it is again.
+
+9. vapply() > sapply()
+We can call this unique_letters() function and apply it over the cities vector using sapply. At this point, we could have incorrectly assumed that sapply would be successful at simplifying the result to a vector, but this is not the case because the unique_letters function returns vectors of different sizes. If we try to do something similar with vapply, we have to specify the FUN (dot) VALUE argument. Let's assume that unique_letters() always returns a vector of 4 character strings: As before, we get an error, because the unique_letters() function doesn't always return a vector of character strings of length 4. This stresses our main point: vapply() is safer than sapply() if you want to simplify the result that lapply() generates.
+
+10. Let's practice!
+  Wow, that's a lot of applying that you can do in R now! In fact, there's even more. The apply, tapply, mapply and rapply functions exist as well. You'll learn more about these in the advanced R course. Enough theory for today. Head over to the final set of exercises for this chapter to ramp up your skills!
+
+Exercise
+Use vapply
+Before you get your hands dirty with the third and last apply function that you'll learn about in this intermediate R course, let's take a look at its syntax. The function is called vapply(), and it has the following syntax:
+
+vapply(X, FUN, FUN.VALUE, ..., USE.NAMES = TRUE)
+Over the elements inside X, the function FUN is applied. The FUN.VALUE argument expects a template for the return argument of this function FUN. USE.NAMES is TRUE by default; in this case vapply() tries to generate a named array, if possible.
+
+For the next set of exercises, you'll be working on the temp list again, that contains 7 numerical vectors of length 5. We also coded a function basics() that takes a vector, and returns a named vector of length 3, containing the minimum, mean and maximum value of the vector respectively.
+
+Instructions
+
+Apply the function basics() over the list of temperatures, temp, using vapply(). This time, you can use numeric(3) to specify the FUN.VALUE argument.
+
+code-
+  
+  # temp is already available in the workspace
+  
+  # Definition of basics()
+  basics <- function(x) {
+    c(min = min(x), mean = mean(x), max = max(x))
+  }
+
+# Apply basics() over temp using vapply()
+vapply(temp, basics, numeric(3))
+
+Exercise
+
+Use vapply (2)
+So far you've seen that vapply() mimics the behavior of sapply() if everything goes according to plan. But what if it doesn't?
+  
+  In the video, Filip showed you that there are cases where the structure of the output of the function you want to apply, FUN, does not correspond to the template you specify in FUN.VALUE. In that case, vapply() will throw an error that informs you about the misalignment between expected and actual output.
+
+Instructions
+
+Inspect the pre-loaded code and try to run it. If you haven't changed anything, an error should pop up. That's because vapply() still expects basics() to return a vector of length 3. The error message gives you an indication of what's wrong.
+Try to fix the error by editing the vapply() command.
+
+Code 
+
+# temp is already available in the workspace
+
+# Definition of the basics() function
+basics <- function(x) {
+  c(min = min(x), mean = mean(x), median = median(x), max = max(x))
+}
+
+# Fix the error:
+vapply(temp, basics, numeric(4))
+
+Exercise
+From sapply to vapply
+As highlighted before, vapply() can be considered a more robust version of sapply(), because you explicitly restrict the output of the function you want to apply. Converting your sapply() expressions in your own R scripts to vapply() expressions is therefore a good practice (and also a breeze!).
+
+Instructions
+
+Convert all the sapply() expressions on the right to their vapply() counterparts. Their results should be exactly the same; you're only adding robustness. You'll need the templates numeric(1) and logical(1).
+
+
+Code 
+
+# temp is already defined in the workspace
+
+# Convert to vapply() expression
+vapply(temp, max, numeric(1))
+
+# Convert to vapply() expression
+vapply(temp, function(x, y) { mean(x) > y }, logical(1), y = 5)
+
+Exercise
+From sapply to vapply
+As highlighted before, vapply() can be considered a more robust version of sapply(), because you explicitly restrict the output of the function you want to apply. Converting your sapply() expressions in your own R scripts to vapply() expressions is therefore a good practice (and also a breeze!).
+
+Instructions
+
+Convert all the sapply() expressions on the right to their vapply() counterparts. Their results should be exactly the same; you're only adding robustness. You'll need the templates numeric(1) and logical(1).
+
+Code 
+
+# temp is already defined in the workspace
+
+# Convert to vapply() expression
+vapply(temp, max, numeric(1))
+
+# Convert to vapply() expression
+vapply(temp, function(x, y) { mean(x) > y }, logical(1), y = 5)
+
+Chapter 5- Utilities
+
+1. Useful Functions
+2. Loads of useful functions
+By now, you surely have some idea of the huge amount of useful functions that are available in R. The functions of the apply family that you've learned about before are just an illustration of this diversity. Along the way you also used the sort function, the print function, the identical function, and many more. In this video, I'm going to talk about a number of easy, but very often used functions in the R language. First, I'm going to talk about some math-related functions and next, I'll head over to functions that relate more closely to R's data structures. If you aced all the previous exercises, you should recognize some of them.
+3. Mathematical utilities
+Have a look at the following R code that uses several mathematical functions. The first two lines of code are nothing new; they simply create two vectors, v1 and v2. The last line of code is less straightforward so let's chop it up into pieces and see what each of the function components does along the way.
+4. abs()
+The innermost function, abs() calculates the absolute value of an array of numerical values, in our case the vectors v1 and v2. I went ahead and already replaced the variable names with the actual vectors that they represent. The result is what we would expect. We get the positive value of all elements. Let's replace the vectors that result from calling the abs() functions in the expression, giving us the following line.
+5. round()
+The next inner function that we encounter is the round() function, which rounds the input. In the first round function, 1 (point) 1 gets rounded to 1, while 2 (point) 7 is rounded to 3. In the second round call 3 (point) 6 becomes 4 and 8 (point) 0 becomes 8.
+6. sum()
+If we replace the round() functions with their results, we arrive at the sum() function. This function simply computes the sum of the input array. If you pass a matrix as an argument to the sum function, for example, the sum of all the matrix elements gets returned. In our example, a vector is passed to the sum function, so R simply calculates the sum of the vector elements. The first sum is 16, while the second sum equals 22. We've almost broken down our expression entirely if we fill in the results of both the sum calls.
+7. mean()
+The mean function calculates the arithmetic mean. Again, mean() is a generic function that is capable of handling different types of R objects, but most commonly you would use it on numerical arrays. In our case, the input to mean is a vector of length 2, containing the values 16 and 22. Recalling our primary school level math, it isn't a surprise that the result of this call is 19. Finally! We arrive at the end of our bulky arithmetic one-liner: the result is 19. This corresponds to the result that we get when we execute the code chunk we began with.
+8. Functions for data structures
+This was still pretty easy, right? Let's head over to the next example to introduce some of the functions you'll often use when creating and manipulating data structures. Take a close look at this big fella'. No need to panic! There are some things we already know here. The list() function creates a list. Apparently, there are three list elements, named log, ch and int_vec. log is simply a logical, TRUE, ch is a character string, hello, but what about int_vec? Let's have a closer look. The innermost function here, is the seq() function
+9. seq()
+seq generates a sequence of numbers. The first two arguments tell R the limits of the sequence. That is, where to start and end the sequence, respectively. The by argument specifies the increment value for the sequence on each step. For instance, this line of code would generate a sequence starting at 1, going to 10, with steps of size 3. For our example, the seq function call would read as: generate a sequence from 8 to 2, while taking steps of -2. We get a vector of length 4. As before, let's go ahead and fill in the resulting vector to simplify the expression for int_vec.
+10. rep()
+We now arrive at the rep() function. The rep() function has the ability to replicate its input, which typically is a vector or a list. Using the times argument, we can specify how the replication should happen. If the times argument is a vector of length 1, it tells rep() how often the entire structure should be repeated. This is the case in our example, which results in a vector of length 8. You could also use the each argument inside rep. Instead of repeating the entire vector, every element gets repeated. Can you spot the difference? There are more advanced ways of using rep() which I won't detail here. Remember, help is just a single question mark (?) away in R! So our rep() call with the times argument results in a vector of length 8. Let's go ahead an replace the call with this result.
+11. sort()
+Finally, the sort() function is a generic function for sorting an input vector. You can use it on numerical values, but also on character and logical vectors. It works as you would expect, sorting the input vector in ascending order. By setting the decreasing argument, which is FALSE by default, to TRUE, we can reverse the order of arranging. So that's that. We've reverse engineered the bulky expression for the int_vec element inside our list. To check if we decomposed this expression correctly
+12. sort()
+let's see what a direct evaluation looks like. Looks good! We thus end up with the following list definition.
+13. str()
+Remember the str() function to inspect the structure of this list? It's a great function to see the contents of your data structures in a concise way. Before you can roll up your sleeves for the some of the interactive exercises
+14. is.*(), as.*()
+have a look at the following R expression. The is (dot) functions are functions you can use to check the type of your data structure. They return a logical. Because li is a list, is (dot) list of li returns TRUE. On the other hand, is (dot) list on a vector returns FALSE. Instead of is (dot) function, R also provides the as (dot) functions. These can be used to convert vectors to lists, for example. Now, calling is (dot) list on li2 will return TRUE as the vector was converted to a list using as (dot) list().
+15. is.*(), as.*()
+Next, there might be some cases in which you want to convert your list to a vector. In these cases, you might want to use the unlist function. R flattens the entire list structure and returns a single vector. Notice the coercion here. Because vectors can only contain a single atomic type, the logical TRUE and the numerical vector are all coerced to character strings. Also notice how R tries to come up with meaningful names for all vector elements.
+16. append(), rev()
+Finally, you should definitely check out the append() and rev() functions. The append() function allows you to add elements to a vector or a list in a very readable way. In combination with the rev() function, which reverses elements in a data structure, we could create a new version of li that contains the same data in the different order. The rev() function first reverses the list, placing the int_vec vector first and the log value, TRUE last.
+17. append(), rev()
+Afterwards, append() concatenates the original vector li and its reversed version to create a list of 6 elements, double li's length. Notice how I used the str() function here to inspect the structure.
+18. Let's practice!
+Head over to the exercises to experience all of this data structure juggling and mathematical supercharging yourself! Have fun!
+
+
+Exercise
+
+Mathematical utilities
+Have another look at some useful math functions that R features:
+	• abs(): Calculate the absolute value.
+	• sum(): Calculate the sum of all the values in a data structure.
+	• mean(): Calculate the arithmetic mean.
+	• round(): Round the values to 0 decimal places by default. Try out ?round in the console for variations of round() and ways to change the number of digits to round to.
+As a data scientist in training, you've estimated a regression model on the sales data for the past six months. After evaluating your model, you see that the training error of your model is quite regular, showing both positive and negative values. A vector errors containing the error values has been pre-defined for you.
+
+Instructions
+
+Calculate the sum of the absolute rounded values of the training errors. You can work in parts, or with a single one-liner. There's no need to store the result in a variable, just have R print it.
+
+Code
+
+# The errors vector has already been defined for you
+errors <- c(1.9, -2.6, 4.0, -9.5, -3.4, 7.3)
+
+# Sum of absolute rounded values of errors
+abs(round(errors))
+sum(abs(round(errors)))
+
+Exercise
+
+Find the error
+We went ahead and pre-loaded some code for you, but there's still an error. Can you trace it and fix it?
+  In times of despair, help with functions such as sum() and rev() are a single command away; simply execute the code ?sum and ?rev.
+
+Instructions
+
+Fix the error by including code on the last line. Remember: you want to call mean() only once!
+  
+  # Don't edit these two lines
+  vec1 <- c(1.5, 2.5, 8.4, 3.7, 6.3)
+vec2 <- rev(vec1)
+
+# Fix the error
+mean(abs(vec1))
+
+Exercise
+Data Utilities
+R features a bunch of functions to juggle around with data structures::
+  • seq(): Generate sequences, by specifying the from, to, and by arguments.
+• rep(): Replicate elements of vectors and lists.
+• sort(): Sort a vector in ascending order. Works on numerics, but also on character strings and logicals.
+• rev(): Reverse the elements in a data structures for which reversal is defined.
+• str(): Display the structure of any R object.
+• append(): Merge vectors or lists.
+• is.*(): Check for the class of an R object.
+• as.*(): Convert an R object from one class to another.
+• unlist(): Flatten (possibly embedded) lists to produce a vector.
+Remember the social media profile views data? Your LinkedIn and Facebook view counts for the last seven days have been pre-defined as lists.
+
+Instructions
+
+• Convert both linkedin and facebook lists to a vector, and store them as li_vec and fb_vec respectively.
+• Next, append fb_vec to the li_vec (Facebook data comes last). Save the result as social_vec.
+Finally, sort social_vec from high to low. Print the resulting vector.
+
+code
+
+# The linkedin and facebook lists have already been created for you
+linkedin <- list(16, 9, 13, 5, 2, 17, 14)
+facebook <- list(17, 7, 5, 16, 8, 13, 14)
+
+# Convert linkedin and facebook to a vector: li_vec and fb_vec
+li_vec <- unlist(linkedin, recursive = TRUE, use.names = TRUE)
+fb_vec <- unlist(facebook, recursive = TRUE, use.names = TRUE)
+
+# Append fb_vec to li_vec: social_vec
+social_vec <- append(li_vec,fb_vec)
+
+# Sort social_vec
+sort(social_vec, decreasing=TRUE)
+
+Exercise
+
+Find the error (2)
+Just as before, let's switch roles. It's up to you to see what unforgivable mistakes we've made. Go fix them!
+
+Instructions
+
+Correct the expression. Make sure that your fix still uses the functions rep() and seq().
+
+
+# Fix me
+rep(seq(1, 7, by = 2), times = 7)
+
+Beat Gauss using R
+
+There is a popular story about young Gauss. As a pupil, he had a lazy teacher who wanted to keep the classroom busy by having them add up the numbers 1 to 100. Gauss came up with an answer almost instantaneously, 5050. On the spot, he had developed a formula for calculating the sum of an arithmetic series. There are more general formulas for calculating the sum of an arithmetic series with different starting values and increments. Instead of deriving such a formula, why not use R to calculate the sum of a sequence?
+    
+    Instructions
+100 XP
+Using the function seq(), create a sequence that ranges from 1 to 500 in increments of 3. Assign the resulting vector to a variable seq1.
+Again with the function seq(), create a sequence that ranges from 1200 to 900 in increments of -7. Assign it to a variable seq2.
+Calculate the total sum of the sequences, either by using the sum() function twice and adding the two results, or by first concatenating the sequences and then using the sum() function once. Print the result to the console.
+
+Code 
+
+# Create first sequence: seq1
+seq1 <- seq(from = 1, to = 500, by = 3)
+
+# Create second sequence: seq2
+seq2 <- seq(from= 1200, to = 900, by= -7)
+
+# Calculate total sum of the sequences
+sum(seq1) + sum(seq2) 
+
+Exercise
+grepl & grep
+In their most basic form, regular expressions can be used to see whether a pattern exists inside a character string or a vector of character strings. For this purpose, you can use:
+	• grepl(), which returns TRUE when a pattern is found in the corresponding character string.
+	• grep(), which returns a vector of indices of the character strings that contains the pattern.
+Both functions need a pattern and an x argument, where pattern is the regular expression you want to match for, and the x argument is the character vector from which matches should be sought.
+In this and the following exercises, you'll be querying and manipulating a character vector of email addresses! The vector emails has been pre-defined so you can begin with the instructions straight away!
+  
+  Instructions
+
+• Use grepl() to generate a vector of logicals that indicates whether these email addresses contain "edu". Print the result to the output.
+• Do the same thing with grep(), but this time save the resulting indexes in a variable hits.
+Use the variable hits to select from the emails vector only the emails that contain "edu".
+
+code 
+
+# The emails vector has already been defined for you
+emails <- c("john.doe@ivyleague.edu", "education@world.gov", "dalai.lama@peace.org",
+            "invalid.edu", "quant@bigdatacollege.edu", "cookie.monster@sesame.tv")
+
+# Use grepl() to match for "edu"
+grepl("edu", emails)
+
+# Use grep() to match for "edu", save result to hits
+hits <- grep("edu", emails)
+
+# Subset emails using hits
+emails[hits]
+
+Exercise
+grepl & grep (2)
+You can use the caret, ^, and the dollar sign, $ to match the content located in the start and end of a string, respectively. This could take us one step closer to a correct pattern for matching only the ".edu" email addresses from our list of emails. But there's more that can be added to make the pattern more robust:
+	• @, because a valid email must contain an at-sign.
+	• .*, which matches any character (.) zero or more times (*). Both the dot and the asterisk are metacharacters. You can use them to match any character between the at-sign and the ".edu" portion of an email address.
+	• \\.edu$, to match the ".edu" part of the email at the end of the string. The \\ part escapes the dot: it tells R that you want to use the . as an actual character.
+Instructions
+
+	• Use grepl() with the more advanced regular expression to return a logical vector. Simply print the result.
+	• Do a similar thing with grep() to create a vector of indices. Store the result in the variable hits.
+	• Use emails[hits] again to subset the emails vector
+
+Code
+
+# The emails vector has already been defined for you
+emails <- c("john.doe@ivyleague.edu", "education@world.gov", "dalai.lama@peace.org",
+            "invalid.edu", "quant@bigdatacollege.edu", "cookie.monster@sesame.tv")
+# Use grepl() to match for .edu addresses more robustly
+grepl("@.*\\.edu$", emails)
+# Use grep() to match for .edu addresses more robustly, save result to hits
+hits <- grep("@.*\\.edu$", emails)
+# Subset emails using hits
+emails[hits]
+
+Exercise
+
+sub & gsub
+
+While grep() and grepl() were used to simply check whether a regular expression could be matched with a character vector, sub() and gsub() take it one step further: you can specify a replacement argument. If inside the character vector x, the regular expression pattern is found, the matching element(s) will be replaced with replacement. sub() only replaces the first match, whereas gsub() replaces all matches.
+Suppose that emails vector you've been working with is an excerpt of DataCamp's email database. Why not offer the owners of the .edu email addresses a new email address on the datacamp.edu domain? This could be quite a powerful marketing stunt: Online education is taking over traditional learning institutions! Convert your email and be a part of the new generation!
+
+Instructions
+
+With the advanced regular expression "@.*\\.edu$", use sub() to replace the match with "@datacamp.edu". Since there will only be one match per character string, gsub() is not necessary here. Inspect the resulting output.
+
+Code 
+
+# The emails vector has already been defined for you
+emails <- c("john.doe@ivyleague.edu", "education@world.gov", "global@peace.org",
+            "invalid.edu", "quant@bigdatacollege.edu", "cookie.monster@sesame.tv")
+
+# Use sub() to convert the email domains to datacamp.edu
+sub("@.*\\.edu$", "@datacamp.edu", emails, ignore.case = FALSE, perl = FALSE,
+    fixed = FALSE, useBytes = FALSE)
+    
+    Exercise
+
+sub & gsub (2)
+Regular expressions are a typical concept that you'll learn by doing and by seeing other examples. Before you rack your brains over the regular expression in this exercise, have a look at the new things that will be used:
+  • .*: A usual suspect! It can be read as "any character that is matched zero or more times".
+• \\s: Match a space. The "s" is normally a character, escaping it (\\) makes it a metacharacter.
+• [0-9]+: Match the numbers 0 to 9, at least once (+).
+• ([0-9]+): The parentheses are used to make parts of the matching string available to define the replacement. The \\1 in the replacement argument of sub() gets set to the string that is captured by the regular expression [0-9]+.
+awards <- c("Won 1 Oscar.",
+            "Won 1 Oscar. Another 9 wins & 24 nominations.",
+            "1 win and 2 nominations.",
+            "2 wins & 3 nominations.",
+            "Nominated for 2 Golden Globes. 1 more win & 2 nominations.",
+            "4 wins & 1 nomination.")
+sub(".*\\s([0-9]+)\\snomination.*$", "\\1", awards)
+What does this code chunk return? awards is already defined in the workspace so you can start playing in the console straight away.
+
+Instructions
+
+Possible Answers
+• A vector of integers containing: 1, 24, 2, 3, 2, 1.
+• The vector awards gets returned as there isn't a single element in awards that matches the regular expression.
+• A vector of character strings containing "1", "24", "2", "3", "2", "1".
+• A vector of character strings containing "Won 1 Oscar.", "24", "2", "3", "2", "1". (correct answer)
+
+1. Times & Dates
+One more thing I want to talk to you about are dates and times in R. Time information can come in pretty handy in different situations. For example, imagine you're writing a script that has to be run hourly on a remote server. Generating log files that contain timing information can help you structure these log files and trace potential problems. For other very specific applications such as time-series analyses and seasonality studies, R's power to deal with times and dates will prove extremely useful.
+2. Today, right now!
+The first step in our exploration will be to simply ask R what the current date is. The output tells us that we're in the year 2015, the fifth month and the seventh day. That is, the seventh of May, 2015. Time is going fast, as always... Is the variable today simply a character string or is there something else going on? Let's have a look to the class() function to see type of the today variable. today is a "Date" object, a special kind of R object that represents dates. To get the current time in R, we use Sys (dot) time(). We get both the time and the date in a very clear format. Notice the difference in capitalization here. Sys (dot) Date() is written with a capital D while Sys (dot) time() is written with a small t. As you'd expect, also the variable now is not a simple string. Let's find out with the class() function. The important class here is POSIXct. Apart from providing rich functionality for calculus and formatting, this class makes sure that the dates and times in R are compatible accross different operating systems, according to the POSIX standard.
+3. Create Date objects
+Great, we know how to get the current date and time. What about creating Dates for other days? For example, let's say we want to get a Date object for May 14 in 1971. We can use the as (dot) Date() function to convert a character string to a Date. my_date is now an object of class Date. How did R know which elements of the string correspond to the day of the month, which to the month and which to the year? Let's see what happens if we scramble the order of the date elements.
+4. Create Date objects
+R fails. That's because as (dot) Date() tries some default data formats. It first tries the ISO date format, which is the most common around the globe. This format represents the year with four digits, dash, month as a 2 digit number, dash, day as a two digit number. Because our first character string had this format, R was able to convert the string to a Date. However, for the second example, R failed because the date couldn't be inferred. We can fix this by setting the format argument of as (dot) Date() explicitly. If we specify that the first part of our date is the Year, the second part is the day of the month and the third part is the month, we can have R understand what we mean. If we now print my_date, we see the same date as before, great! There are many more ways to format a date, for example using the full name of a month or a two digit year. You can find a comprehensive list in the interactive exercises.
+5. Create POSIXct objects
+To convert a string denoting an exact time, we can use the function as (dot) POSIXct(). Once again you could use the format argument inside as (dot) POSIXct to convert character strings with a different layout.
+6. Date arithmetic
+The cool thing about R objects from the Date and POSIXct classes is that you can do calculations with them. Consider my_date, which we created from a character string earlier. If we simply increment my_date with 1, R will increment the date by 1 day, giving us the 15th of May in 1971. Say we now want to know the difference between the 29th of September in 1998 and my_date. We first create a new data object, my_date2, from a character string. Next, we can simply do a subtraction, calculating the difference in days. There appears to be a time difference of exactly 10000 days, what a coincidence!
+7. POSIXct arithmetic
+Computations with POSIXct objects happen in the exact same fashion. The only difference is that the "time unit" of POSIXct is not a day as for Date objects, but is a second. Suppose we increment the my_time object we created earlier by 1. We get the following time, so we're one second further in time now. To get the difference between times, let's create a new time, and calculate the difference with my_time. Because the time difference is so large, R simply displays the time difference in days. For any time difference, R will automatically display an easily interpretable time difference.
+8. Under the hood
+How is R able to do all these calculations so seamlessly? Well, under the hood, R represents dates and times as simple numerics. A Date object is simply a more advanced representation of the number of days since the first of January in 1970. If we unclass the my_date object, thus converting it from a Date to a numeric, we see the number 498, because the 14th of May in 1971 is exactly 498 days from the first of January in 1970. If you're calculating the difference between two days, in fact you're simply calculating the difference between numerical values, and that's something R is particularly good at. The same holds for the POSIXct objects, which are actually simple numerics that hold the number of seconds since the first of January in 1970 at midnight.
+9. Dedicated R Packages
+Now you know how R handles times and dates behind the scenes, you should have a clear idea of what you can and can't do with dates in R. Now R wouldn't be R if there weren't dedicated packages to deal with times in a more advanced fashion. If you want to learn more, You can check out the lubridate, zoo and xts packages, they're really neat. Time to head over to the exercises now!
+  10. Let's practice!
+  
+  
+Exercise
+
+Right here, right now
+In R, dates are represented by Date objects, while times are represented by POSIXct objects. Under the hood, however, these dates and times are simple numerical values. Date objects store the number of days since the 1st of January in 1970. POSIXct objects on the other hand, store the number of seconds since the 1st of January in 1970.
+The 1st of January in 1970 is the common origin for representing times and dates in a wide range of programming languages. There is no particular reason for this; it is a simple convention. Of course, it's also possible to create dates and times before 1970; the corresponding numerical values are simply negative in this case.
+
+Instructions
+
+• Ask R for the current date, and store the result in a variable today.
+• To see what today looks like under the hood, call unclass() on it.
+• Ask R for the current time, and store the result in a variable, now.
+• To see the numerical value that corresponds to now, call unclass() on it.
+
+
+# Get the current date: today
+today <- Sys.Date()
+# See what today looks like under the hood
+unclass(today)
+# Get the current time: now
+now <- Sys.time()
+# See what now looks like under the hood
+unclass(now)
+
+Exercise
+Create and format dates
+To create a Date object from a simple character string in R, you can use the as.Date() function. The character string has to obey a format that can be defined using a set of symbols (the examples correspond to 13 January, 1982):
+  • %Y: 4-digit year (1982)
+• %y: 2-digit year (82)
+• %m: 2-digit month (01)
+• %d: 2-digit day of the month (13)
+• %A: weekday (Wednesday)
+• %a: abbreviated weekday (Wed)
+• %B: month (January)
+• %b: abbreviated month (Jan)
+The following R commands will all create the same Date object for the 13th day in January of 1982:
+  as.Date("1982-01-13")
+as.Date("Jan-13-82", format = "%b-%d-%y")
+as.Date("13 January, 1982", format = "%d %B, %Y")
+Notice that the first line here did not need a format argument, because by default R matches your character string to the formats "%Y-%m-%d" or "%Y/%m/%d".
+In addition to creating dates, you can also convert dates to character strings that use a different date notation. For this, you use the format() function. Try the following lines of code:
+  today <- Sys.Date()
+format(Sys.Date(), format = "%d %B, %Y")
+format(Sys.Date(), format = "Today is a %A!")
+
+Instructions
+
+• Three character strings representing dates have been created for you. Convert them to dates using as.Date(), and assign them to date1, date2, and date3 respectively. The code for date1 is already included.
+• Extract useful information from the dates as character strings using format(). From the first date, select the weekday. From the second date, select the day of the month. From the third date, you should select the abbreviated month and the 4-digit year, separated by a space.
+
+# Definition of character strings representing dates
+str1 <- "May 23, '96"
+str2 <- "2012-03-15"
+str3 <- "30/January/2006"
+# Convert the strings to dates: date1, date2, date3
+date1 <- as.Date(str1, format = "%b %d, '%y")
+date2 <- as.Date(str2)
+date3 <- as.Date(str3, format = "%d/%B/%Y")
+
+# Convert dates to formatted strings
+format(date1, "%A")
+format(date2, "%d")
+format(date3, "%b %Y")
+#Print date1 date2 date3
+date1 
+date2
+date3
+
+Exercise
+Create and format times
+Similar to working with dates, you can use as.POSIXct() to convert from a character string to a POSIXct object, and format() to convert from a POSIXct object to a character string. Again, you have a wide variety of symbols:
+  • %H: hours as a decimal number (00-23)
+• %I: hours as a decimal number (01-12)
+• %M: minutes as a decimal number
+• %S: seconds as a decimal number
+• %T: shorthand notation for the typical format %H:%M:%S
+• %p: AM/PM indicator
+For a full list of conversion symbols, consult the strptime documentation in the console:
+  ?strptime
+Again,as.POSIXct() uses a default format to match character strings. In this case, it's %Y-%m-%d %H:%M:%S. In this exercise, abstraction is made of different time zones.
+
+Instructions
+
+	• Convert two strings that represent timestamps, str1 and str2, to POSIXct objects called time1 and time2.
+	• Using format(), create a string from time1 containing only the minutes.
+	• From time2, extract the hours and minutes as "hours:minutes AM/PM". Refer to the assignment text above to find the correct conversion symbols!
+
+
+# Definition of character strings representing times
+str1 <- "May 23, '96 hours:23 minutes:01 seconds:45"
+str2 <- "2012-3-12 14:23:08"
+# Convert the strings to POSIXct objects: time1, time2
+time1 <- as.POSIXct(str1, format = "%B %d, '%y hours:%H minutes:%M seconds:%S")
+time2 <- as.POSIXct(str2)
+
+# Convert times to formatted strings
+format(time1, format = "%M")
+format(time2, format = "%I:%M %p")
+
+Exercise
+
+Calculations with Dates
+Both Date and POSIXct R objects are represented by simple numerical values under the hood. This makes calculation with time and date objects very straightforward: R performs the calculations using the underlying numerical values, and then converts the result back to human-readable time information again.
+You can increment and decrement Date objects, or do actual calculations with them:
+today <- Sys.Date()
+today + 1
+today - 1
+as.Date("2015-03-12") - as.Date("2015-02-27")
+To control your eating habits, you decided to write down the dates of the last five days that you ate pizza. In the workspace, these dates are defined as five Date objects, day1 to day5. A vector pizza containing these 5 Date objects has been pre-defined for you.
+
+Instructions
+
+	• Calculate the number of days that passed between the last and the first day you ate pizza. Print the result.
+	• Use the function diff() on pizza to calculate the differences between consecutive pizza days. Store the result in a new variable day_diff.
+	• Calculate the average period between two consecutive pizza days. Print the result.
+	
+Code 
+
+# day1, day2, day3, day4 and day5 are already available in the workspace
+
+# Difference between last and first pizza day
+as.Date(day5)- as.Date(day1)
+# Create vector pizza
+pizza <- c(day1, day2, day3, day4, day5)
+
+# Create differences between consecutive pizza days: day_diff
+day_diff <- diff(pizza)
+
+# Average period between two consecutive pizza days
+mean(day_diff)
+
+Exercise
+Calculations with Times
+Calculations using POSIXct objects are completely analogous to those using Date objects. Try to experiment with this code to increase or decrease POSIXct objects:
+now <- Sys.time()
+now + 3600          # add an hour
+now - 3600 * 24     # subtract a day
+Adding or subtracting time objects is also straightforward:
+birth <- as.POSIXct("1879-03-14 14:37:23")
+death <- as.POSIXct("1955-04-18 03:47:12")
+einstein <- death - birth
+einstein
+You're developing a website that requires users to log in and out. You want to know what is the total and average amount of time a particular user spends on your website. This user has logged in 5 times and logged out 5 times as well. These times are gathered in the vectors login and logout, which are already defined in the workspace.
+Instructions
+
+• Calculate the difference between the two vectors logout and login, i.e. the time the user was online in each independent session. Store the result in a variable time_online.
+• Inspect the variable time_online by printing it.
+• Calculate the total time that the user was online. Print the result.
+• Calculate the average time the user was online. Print the result.
+
+# Calculate the difference between login and logout: time_online
+time_online <- logout - login
+# Inspect the variable time_online
+time_online
+# Calculate the total time online
+tot_time_online <- sum(time_online)
+# Calculate the average time online
+mean(time_online)
+
+Exercise
+Time is of the essence
+The dates when a season begins and ends can vary depending on who you ask. People in Australia will tell you that spring starts on September 1st. The Irish people in the Northern hemisphere will swear that spring starts on February 1st, with the celebration of St. Brigid's Day. Then there's also the difference between astronomical and meteorological seasons: while astronomers are used to equinoxes and solstices, meteorologists divide the year into 4 fixed seasons that are each three months long. (source: www.timeanddate.com)
+A vector astro, which contains character strings representing the dates on which the 4 astronomical seasons start, has been defined on your workspace. Similarly, a vector meteo has already been created for you, with the meteorological beginnings of a season.
+
+Instructions
+
+• Use as.Date() to convert the astro vector to a vector containing Date objects. You will need the %d, %b and %Y symbols to specify the format. Store the resulting vector as astro_dates.
+• Use as.Date() to convert the meteo vector to a vector with Date objects. This time, you will need the %B, %d and %y symbols for the format argument. Store the resulting vector as meteo_dates.
+• With a combination of max(), abs() and -, calculate the maximum absolute difference between the astronomical and the meteorological beginnings of a season, i.e. astro_dates and meteo_dates. Simply print this maximum difference to the console output.
+
+# Convert astro to vector of Date objects: astro_dates
+astro_dates <- as.Date(astro, format= "%d-%b-%Y")
+# Convert meteo to vector of Date objects: meteo_dates
+meteo_dates <- as.Date(meteo, format= "%B %d, %y")
+# Calculate the maximum absolute difference between astro_dates and meteo_dates
+max(abs(astro_dates - meteo_dates))
 
 
 
